@@ -2,10 +2,7 @@ using System;
 
 static class Appointment
 {
-    public static DateTime Schedule(string appointmentDateDescription)
-    {
-        return DateTime.Parse(appointmentDateDescription); 
-    }
+    public static DateTime Schedule(string appointmentDateDescription) => DateTime.Parse(appointmentDateDescription);
 
     public static bool HasPassed(DateTime appointmentDate)
     {
