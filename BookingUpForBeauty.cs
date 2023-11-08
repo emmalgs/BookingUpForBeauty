@@ -6,10 +6,7 @@ static class Appointment
 
     public static bool HasPassed(DateTime appointmentDate) => appointmentDate < DateTime.Now;
 
-    public static bool IsAfternoonAppointment(DateTime appointmentDate)
-    {
-        return appointmentDate.Hour >= 12 && appointmentDate.Hour < 18;
-    }
+    public static bool IsAfternoonAppointment(DateTime appointmentDate) => appointmentDate.Hour >= 12 && appointmentDate.Hour < 18;
 
     public static string Description(DateTime appointmentDate)
     {
