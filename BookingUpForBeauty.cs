@@ -17,7 +17,7 @@ static class Appointment
     public static string Description(DateTime appointmentDate)
     {
         string description = appointmentDate.ToString("M/d/yyyy h:mm:ss tt");
-        return "You have an appointment on " + description + ".";
+        return $"You have an appointment on {description}.";
     }
 
     public static DateTime AnniversaryDate()
