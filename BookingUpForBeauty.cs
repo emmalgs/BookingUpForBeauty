@@ -4,10 +4,7 @@ static class Appointment
 {
     public static DateTime Schedule(string appointmentDateDescription) => DateTime.Parse(appointmentDateDescription);
 
-    public static bool HasPassed(DateTime appointmentDate)
-    {
-        return appointmentDate < DateTime.Now;
-    }
+    public static bool HasPassed(DateTime appointmentDate) => appointmentDate < DateTime.Now;
 
     public static bool IsAfternoonAppointment(DateTime appointmentDate)
     {
